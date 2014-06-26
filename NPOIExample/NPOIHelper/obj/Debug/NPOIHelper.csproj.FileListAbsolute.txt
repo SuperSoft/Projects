@@ -1,0 +1,11 @@
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOIHelper.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOIHelper.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOI.DDF.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOI.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOI.HPSF.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOI.HSSF.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOI.POIFS.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\bin\Debug\NPOI.Util.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\obj\Debug\NPOIHelper.dll
+c:\users\administrator\documents\visual studio 2010\Projects\NPOIExample\NPOIHelper\obj\Debug\NPOIHelper.pdb

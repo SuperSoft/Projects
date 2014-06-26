@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="sampleGroup" targetNamespace="http://schemas.PanPort.com/pag/cab-profile/2.0/" xmlns:mstns="http://schemas.PanPort.com/pag/cab-profile/2.0/" xmlns="http://schemas.PanPort.com/pag/cab-profile/2.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="sampleGroup" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="simple">
+          <xs:complexType>
+            <xs:attribute name="maxValue" form="unqualified" type="xs:string" />
+            <xs:attribute name="minValue" form="unqualified" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="complex">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="children" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="child" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="firstName" form="unqualified" type="xs:string" />
+                        <xs:attribute name="lastName" form="unqualified" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="height" form="unqualified" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

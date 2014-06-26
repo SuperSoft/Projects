@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AIIS" targetNamespace="schema.aiis.maiis.iport" xmlns:mstns="schema.aiis.maiis.iport" xmlns="schema.aiis.maiis.iport" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="AIIS" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="META">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SENDSYSTEM" type="xs:string" minOccurs="0" />
+              <xs:element name="DESTINATIONSYSTEM" type="xs:string" minOccurs="0" />
+              <xs:element name="SENDTIME" type="xs:string" minOccurs="0" />
+              <xs:element name="SEQUENCENUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="MESSAGETYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="MESSAGESUBTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ORIGINSYSTEM" type="xs:string" minOccurs="0" />
+              <xs:element name="ORIGINSENDTIME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FLIGHTMOVEMENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACTION" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTIVEFLIGHT" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="FLIGHTID" type="xs:string" minOccurs="0" />
+                    <xs:element name="CARRIER" type="xs:string" minOccurs="0" />
+                    <xs:element name="FLIGHT" type="xs:string" minOccurs="0" />
+                    <xs:element name="OPDATE" type="xs:string" minOccurs="0" />
+                    <xs:element name="CHECKINCOUNTERALLOCATION" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CHECKINCOUNTER" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ACTION" type="xs:string" minOccurs="0" />
+                                <xs:element name="ALOID" type="xs:string" minOccurs="0" />
+                                <xs:element name="COUNTERCODE" type="xs:string" minOccurs="0" />
+                                <xs:element name="COUNTERMODE" type="xs:string" minOccurs="0" />
+                                <xs:element name="SERVICETYPE" type="xs:string" minOccurs="0" />
+                                <xs:element name="SCHEDULEOPEN" type="xs:string" minOccurs="0" />
+                                <xs:element name="SCHEDULECLOSE" type="xs:string" minOccurs="0" />
+                                <xs:element name="ESTIMATEOPEN" type="xs:string" minOccurs="0" />
+                                <xs:element name="ESTIMATECLOSE" type="xs:string" minOccurs="0" />
+                                <xs:element name="ACTUALOPEN" type="xs:string" minOccurs="0" />
+                                <xs:element name="ACTUALCLOSE" type="xs:string" minOccurs="0" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sampleGroup xmlns="http://schemas.PanPort.com/pag/cab-profile/2.0/">
+  <simple maxValue="20" minValue="1"></simple>
+  <complex height="190"> 
+    <children>
+      <child firstName="James" lastName="Bond"/>
+      <child firstName="Zhao" lastName="yukai"/>
+      <child firstName="Lee" lastName="yukai"/>
+    </children>
+  </complex>
+</sampleGroup>
