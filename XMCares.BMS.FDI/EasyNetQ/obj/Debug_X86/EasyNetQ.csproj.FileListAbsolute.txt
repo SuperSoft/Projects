@@ -1,0 +1,6 @@
+E:\0NewApp\AMIS\MAIIS.AIIS.MBroker\EasyNetQ\bin\Debug_X86\EasyNetQ.dll
+E:\0NewApp\AMIS\MAIIS.AIIS.MBroker\EasyNetQ\bin\Debug_X86\EasyNetQ.pdb
+E:\0NewApp\AMIS\MAIIS.AIIS.MBroker\EasyNetQ\bin\Debug_X86\Newtonsoft.Json.dll
+E:\0NewApp\AMIS\MAIIS.AIIS.MBroker\EasyNetQ\bin\Debug_X86\RabbitMQ.Client.dll
+E:\0NewApp\AMIS\MAIIS.AIIS.MBroker\EasyNetQ\obj\Debug_X86\EasyNetQ.dll
+E:\0NewApp\AMIS\MAIIS.AIIS.MBroker\EasyNetQ\obj\Debug_X86\EasyNetQ.pdb

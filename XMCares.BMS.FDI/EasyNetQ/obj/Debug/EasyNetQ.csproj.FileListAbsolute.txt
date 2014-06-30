@@ -1,0 +1,10 @@
+E:\Projects\XMCares.BMS.FDI\Buildx86\EasyNetQ.dll
+E:\Projects\XMCares.BMS.FDI\Buildx86\EasyNetQ.pdb
+E:\Projects\XMCares.BMS.FDI\EasyNetQ\obj\Debug\EasyNetQ.dll
+E:\Projects\XMCares.BMS.FDI\EasyNetQ\obj\Debug\EasyNetQ.pdb
+E:\Projects\XMCares.BMS.FDI\EasyNetQ\obj\Debug\EasyNetQ.csprojResolveAssemblyReference.cache
+E:\GitProjects\XMCares.BMS.FDI\Buildx86\EasyNetQ.dll
+E:\GitProjects\XMCares.BMS.FDI\Buildx86\EasyNetQ.pdb
+E:\GitProjects\XMCares.BMS.FDI\EasyNetQ\obj\Debug\EasyNetQ.csprojResolveAssemblyReference.cache
+E:\GitProjects\XMCares.BMS.FDI\EasyNetQ\obj\Debug\EasyNetQ.dll
+E:\GitProjects\XMCares.BMS.FDI\EasyNetQ\obj\Debug\EasyNetQ.pdb
