@@ -1,0 +1,8 @@
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\bin\Release\PanTech.RabbitMQ.Client.dll
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\bin\Release\PanTech.RabbitMQ.Client.pdb
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\bin\Release\EasyNetQ.dll
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\bin\Release\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\bin\Release\RabbitMQ.Client.dll
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\obj\Release\PanTech.RabbitMQ.Client.dll
+C:\Users\Administrator\Desktop\RabbitMQDemo\PanTech.RabbitMQ.Client\obj\Release\PanTech.RabbitMQ.Client.pdb

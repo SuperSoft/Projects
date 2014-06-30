@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\temp_file\RabbitMQDemo\EasyNetQ\bin\x86\Debug\EasyNetQ.dll
+C:\Users\Administrator\Desktop\temp_file\RabbitMQDemo\EasyNetQ\bin\x86\Debug\EasyNetQ.pdb
+C:\Users\Administrator\Desktop\temp_file\RabbitMQDemo\EasyNetQ\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\temp_file\RabbitMQDemo\EasyNetQ\bin\x86\Debug\RabbitMQ.Client.dll
+C:\Users\Administrator\Desktop\temp_file\RabbitMQDemo\EasyNetQ\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\temp_file\RabbitMQDemo\EasyNetQ\obj\x86\Debug\EasyNetQ.dll
+C:\Users\Administrator\Desktop\temp_file\RabbitMQDemo\EasyNetQ\obj\x86\Debug\EasyNetQ.pdb

@@ -1,0 +1,15 @@
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\XMCares.BMS.FDI.Common.dll
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\XMCares.BMS.FDI.Common.pdb
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\obj\Debug\XMCares.BMS.FDI.Common.dll
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\obj\Debug\XMCares.BMS.FDI.Common.pdb
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\log4net.dll
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\log4net.xml
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Config\Log4net.config
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\bin\Debug\Config\Unity.config
+E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Common\obj\Debug\XMCares.BMS.FDI.Common.csprojResolveAssemblyReference.cache
