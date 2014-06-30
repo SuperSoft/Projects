@@ -30,3 +30,6 @@ E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Shell\bin\Debug\XMCares.BMS.FDI.Mode
 E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Shell\bin\Debug\XMCares.BMS.FDI.DAL.dll
 E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Shell\bin\Debug\Oracle.DataAccess.dll
 E:\Projects\XMCares.BMS.FDI\XMCares.BMS.FDI.Shell\bin\Debug\XMCares.BMS.FDI.DAL.pdb
+E:\GitProjects\XMCares.BMS.FDI\XMCares.BMS.FDI.Shell\bin\Debug\XMCares.BMS.FDI.Shell.exe.config
+E:\GitProjects\XMCares.BMS.FDI\XMCares.BMS.FDI.Shell\obj\Debug\XMCares.BMS.FDI.Shell.exe
+E:\GitProjects\XMCares.BMS.FDI\XMCares.BMS.FDI.Shell\obj\Debug\XMCares.BMS.FDI.Shell.pdb
