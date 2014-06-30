@@ -1,9 +1,0 @@
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\bin\Debug\XMCares.RabbitMQ.Client.dll
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\bin\Debug\XMCares.RabbitMQ.Client.pdb
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\bin\Debug\EasyNetQ.dll
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\bin\Debug\Newtonsoft.Json.dll
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\bin\Debug\RabbitMQ.Client.dll
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\bin\Debug\EasyNetQ.pdb
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\obj\Debug\XMCares.BMS.RabbitMQ.csprojResolveAssemblyReference.cache
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\obj\Debug\XMCares.RabbitMQ.Client.dll
-E:\Projects\XMCares.BMS.FDI\XMCares.BMS.RabbitMQ\obj\Debug\XMCares.RabbitMQ.Client.pdb
