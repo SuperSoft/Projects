@@ -5,10 +5,13 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using XMCares.BMS.FDI.BLL;
 using XMCares.BMS.FDI.Common;
+using XMCares.BMS.FDI.Model;
+using XMCares.RabbitMQ.Client.Events;
 using XMCares.RabbitMQ.Client.Events;
 using XMCares.RabbitMQ.Client.Services;
 
@@ -18,7 +21,7 @@ namespace XMCares.BMS.FDI.Shell
     {
         private Log log = Log.GetLogger(typeof(MainForm));
 
-        private RabbitMQService rmqService = null;
+        private IRabbitMQService rmqService = null;
 
         public MainForm()
         {
@@ -27,61 +30,65 @@ namespace XMCares.BMS.FDI.Shell
 
         private void tsmiStart_Click(object sender, EventArgs e)
         {
-            TestDBConn();
-            InitRabbitMQ();
-            SetMenuStrip(true);
+            try
+            {
+                TestDBConn();
+                InitRabbitMQ();
+                SetMenuStrip(true);
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.ToString());
+            }
         }
 
         private void tsmiStop_Click(object sender, EventArgs e)
         {
-            tsmiStart.Enabled = true;
+            DisposeRabbitMQ();
+            SetStatusStrip(tsslDb, false);
             SetMenuStrip(false);
         }
 
         private void tsmiCancel_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void SetMenuStrip(bool started)
-        {
-            tsmiStart.Enabled = !started;
-            tsmiStop.Enabled = started;
+            this.Close();
         }
 
         private void InitRabbitMQ()
         {
-            try
+            rmqService = new RabbitMQService();
+            rmqService.CreateBus(ConfigHelper.RmqServiceUrl);
+            int count = 0;
+            while (!rmqService.IsRabbitMQConnected())
             {
-                rmqService = new RabbitMQService();
-                rmqService.CreateBus(ConfigHelper.RmqServiceUrl);
-                rmqService.OnRabbitMQConnected += new RabbitMQConnected(RMQService_OnRabbitMQConnected);
-                rmqService.OnRabbitMQMessage += new RabbitMQMessage(RMQService_OnRabbitMQMessage);
+                count++;
+                Thread.Sleep(10);
+                if (count == 100)
+                {
+                    rmqService.LogoutBus();
+                    rmqService = null;
+                    MessageBox.Show("Rabbit MQ服务端连接失败!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
-            catch (Exception ex)
-            {
-                string ret = ex.ToString();
-            }
+            rmqService.OnRabbitMQConnected += new RabbitMQConnected(RMQService_OnRabbitMQConnected);
+            rmqService.OnRabbitMQMessage += new RabbitMQMessage(RMQService_OnRabbitMQMessage);
+            rmqService.Subscribe(ConfigHelper.SubQueue);
         }
 
         private void DisposeRabbitMQ()
         {
             rmqService.OnRabbitMQConnected -= new RabbitMQConnected(RMQService_OnRabbitMQConnected);
+            rmqService.OnRabbitMQMessage -= new RabbitMQMessage(RMQService_OnRabbitMQMessage);
             rmqService.LogoutBus();
+            SetStatusStrip(tsslSource, false);
         }
 
         private void RMQService_OnRabbitMQConnected(bool isConnected)
         {
             try
             {
-                if (isConnected)
-                {
-                    this.Invoke(new SetStatusStripHandle(SetStatusStrip), tsslSource, 1);
-                }
-                else
-                {
-                    this.Invoke(new SetStatusStripHandle(SetStatusStrip), tsslSource, 0);
-                }
+                this.Invoke(new SetStatusStripHandle(SetStatusStrip), tsslSource, isConnected);
             }
             catch (Exception ex)
             {
@@ -91,42 +98,42 @@ namespace XMCares.BMS.FDI.Shell
 
         private void RMQService_OnRabbitMQMessage(MessageEventArgs e)
         {
- 
+            string MessageID = e.Messagepoperties.MessageId;
+            string AppID = e.Messagepoperties.AppId;
+            string ContentType = e.Messagepoperties.ContentType;
+            string Type = e.Messagepoperties.Type;
+            string TimeStamp = new DateTime(e.Messagepoperties.Timestamp).ToString("yyyy-MM-dd HH:mm:ss fff");
+            string SystemTime = DateTime.Now.ToString();
+            string MessageBody = Encoding.UTF8.GetString(e.Bytemessage);
+            AIISBASE o = XmlSerializeHelper.Deserialize<AIISBASE>(MessageBody);      
         }
 
         private void TestDBConn()
         {
-            DbOperate d = ObjectFactory.GetObject<DbOperate>("XMCares.BMS.FDI.BLL.DbOperate", "XMCares.BMS.FDI.BLL");
-            d.TestDbConn();
+            Public pub = new Public();
+            bool connStatus = pub.TestDbConn();
+            SetStatusStrip(tsslDb, connStatus);
         }
 
-        private delegate void SetStatusStripHandle(ToolStripStatusLabel control, int status);
-
-        private void SetStatusStrip(ToolStripStatusLabel control, int status)
+        private void SetMenuStrip(bool started)
         {
-            try
-            {
-                switch (status)
-                {
-                    case 0: //未连接
-                        control.BackColor = Color.Red;
-                        control.Text = control.Tag + "：未连接";
+            tsmiStart.Enabled = !started;
+            tsmiStop.Enabled = started;
+        }
 
-                        break;
-                    case 1: //已连接
-                        control.BackColor = Color.Green;
-                        control.Text = control.Tag + "：已连接";
-                        break;
-                    default:
-                        control.BackColor = Color.Red;
-                        control.Text = control.Tag + "：未连接";
-                        break;
-                }
-                log.Info(control.Text);
-            }
-            catch (Exception ex)
+        private delegate void SetStatusStripHandle(ToolStripStatusLabel control, bool status);
+
+        private void SetStatusStrip(ToolStripStatusLabel control, bool status)
+        {
+            if (status)
             {
-                log.Error(ex.ToString());
+                control.BackColor = Color.Green;
+                control.Text = control.Tag + "：已连接"; 
+            }
+            else
+            {
+                control.BackColor = Color.Red;
+                control.Text = control.Tag + "：未连接";
             }
         }
 
@@ -136,7 +143,14 @@ namespace XMCares.BMS.FDI.Shell
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DisposeRabbitMQ();
+            try
+            {
+                DisposeRabbitMQ();
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex.ToString());
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ using XMCares.BMS.FDI.Common;
 
 namespace XMCares.BMS.FDI.DAL
 {
-    public class DbOperate
+    public class Public
     {
         private readonly string connStr = ConfigHelper.DbConnStr;
         public bool TestDbConn()

@@ -80,6 +80,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EasyNetQ\EasyNetQ.csproj">
+      <Project>{b8def709-5168-48f1-b8d3-ad44e4a4a22b}</Project>
+      <Name>EasyNetQ</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XMCares.BMS.FDI.BLL\XMCares.BMS.FDI.BLL.csproj">
       <Project>{ffeba2a2-1008-44ef-bd90-db1d776967b2}</Project>
       <Name>XMCares.BMS.FDI.BLL</Name>

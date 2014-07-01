@@ -14,6 +14,12 @@ namespace XMCares.BMS.FDI.Common
 
         private ILog logger = null;
 
+        public Log()
+        {
+            log4net.Config.XmlConfigurator.Configure(new FileInfo(path));
+            logger = LogManager.GetLogger("XMCares.BMS.FDI");
+        }
+
         public Log(Type type)
         {
             log4net.Config.XmlConfigurator.Configure(new FileInfo(path));

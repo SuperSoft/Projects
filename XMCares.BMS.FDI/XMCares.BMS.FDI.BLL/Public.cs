@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace XMCares.BMS.FDI.BLL
 {
-    public class DbOperate
+    public class Public
     {
-        private DAL.DbOperate dbOper = null;
-        private DAL.DbOperate DbOper
+        private DAL.Public dbOper = null;
+        private DAL.Public DbOper
         {
             get
             {
                 if (dbOper == null)
                 {
-                    dbOper = new DAL.DbOperate();
+                    dbOper = new DAL.Public();
                 }
                 return dbOper;
             }

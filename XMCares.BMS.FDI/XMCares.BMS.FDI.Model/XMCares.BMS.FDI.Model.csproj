@@ -39,7 +39,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="XmlElement\CAROUSELALLOCATION.cs" />
+    <Compile Include="XmlElement\CAROUSEL.cs" />
+    <Compile Include="XmlElement\CHECKINCOUNTER.cs" />
+    <Compile Include="XmlElement\CHECKIN.cs" />
+    <Compile Include="XmlElement\CHECKINCOUNTERALLOCATION.cs" />
+    <Compile Include="XmlElement\CODESHARE.cs" />
+    <Compile Include="XmlElement\FLIGHTSEGMENTS.cs" />
+    <Compile Include="XmlElement\FLIGHTSEGMENT.cs" />
+    <Compile Include="XmlElement\GATEALLOCATION.cs" />
+    <Compile Include="XmlElement\GATE.cs" />
+    <Compile Include="XmlElement\ALTERNATE.cs" />
+    <Compile Include="XmlElement\IRREGULAR.cs" />
+    <Compile Include="XmlElement\SHAREFLIGHT.cs" />
+    <Compile Include="XmlElement\ACTIVEFLIGHT.cs" />
+    <Compile Include="XmlModel\AIISBASE.cs" />
+    <Compile Include="XmlElement\FLIGHTMOVEMENT.cs" />
+    <Compile Include="XmlElement\META.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DbModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
