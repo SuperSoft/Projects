@@ -17,7 +17,7 @@ namespace XMCares.BMS.FDI.Model
     {
         private string aCTIONField;
 
-        private ACTIVEFLIGHT aCTIVEFLIGHTField;
+        private List<ACTIVEFLIGHT> aCTIVEFLIGHTField;
 
         /// <remarks/>
         public string ACTION
@@ -32,8 +32,9 @@ namespace XMCares.BMS.FDI.Model
             }
         }
 
+        [System.Xml.Serialization.XmlElementAttribute("ACTIVEFLIGHT")]
         /// <remarks/>
-        public ACTIVEFLIGHT ACTIVEFLIGHT
+        public List<ACTIVEFLIGHT> ACTIVEFLIGHT
         {
             get
             {

@@ -16,10 +16,10 @@ namespace XMCares.BMS.FDI.Model
     public class CODESHARE
     {
 
-        private SHAREFLIGHT sHAREFLIGHTField;
+        private List<SHAREFLIGHT> sHAREFLIGHTField;
 
         /// <remarks/>
-        public SHAREFLIGHT SHAREFLIGHT
+        public List<SHAREFLIGHT> SHAREFLIGHT
         {
             get
             {

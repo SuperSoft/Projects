@@ -15,10 +15,10 @@ namespace XMCares.BMS.FDI.Model
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "schema.aiis.maiis.iport", IsNullable = false)]
     public class CHECKINCOUNTERALLOCATION
     {
-        private CHECKINCOUNTER cHECKINCOUNTERField;
+        private List<CHECKINCOUNTER> cHECKINCOUNTERField;
 
         /// <remarks/>
-        public CHECKINCOUNTER CHECKINCOUNTER
+        public List<CHECKINCOUNTER> CHECKINCOUNTER
         {
             get
             {

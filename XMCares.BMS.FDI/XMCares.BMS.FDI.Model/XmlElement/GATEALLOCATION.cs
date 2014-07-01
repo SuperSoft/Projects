@@ -15,10 +15,10 @@ namespace XMCares.BMS.FDI.Model
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "schema.aiis.maiis.iport", IsNullable = false)]
     public class GATEALLOCATION
     {
-        private GATE gATEField;
+        private List<GATE> gATEField;
 
         /// <remarks/>
-        public GATE GATE
+        public List<GATE> GATE
         {
             get
             {

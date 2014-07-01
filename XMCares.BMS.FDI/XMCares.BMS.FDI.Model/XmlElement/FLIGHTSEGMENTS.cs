@@ -13,7 +13,7 @@ namespace XMCares.BMS.FDI.Model
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "schema.aiis.maiis.iport")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "schema.aiis.maiis.iport", IsNullable = false)]
-    public partial class FLIGHTSEGMENTS
+    public class FLIGHTSEGMENTS
     {
 
         private List<FLIGHTSEGMENT> fLIGHTSEGMENTField;

@@ -15,10 +15,10 @@ namespace XMCares.BMS.FDI.Model
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "schema.aiis.maiis.iport", IsNullable = false)]
     public class CAROUSELALLOCATION
     {
-        private CAROUSEL cAROUSELField;
+        private List<CAROUSEL> cAROUSELField;
 
         /// <remarks/>
-        public CAROUSEL CAROUSEL
+        public List<CAROUSEL> CAROUSEL
         {
             get
             {
