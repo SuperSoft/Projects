@@ -18,6 +18,7 @@ namespace XMCares.BMS.FDI.Model
 
         private List<SHAREFLIGHT> sHAREFLIGHTField;
 
+        [System.Xml.Serialization.XmlElementAttribute("SHAREFLIGHT")]
         /// <remarks/>
         public List<SHAREFLIGHT> SHAREFLIGHT
         {

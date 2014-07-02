@@ -17,6 +17,7 @@ namespace XMCares.BMS.FDI.Model
     {
         private List<CHECKINCOUNTER> cHECKINCOUNTERField;
 
+        [System.Xml.Serialization.XmlElementAttribute("CHECKINCOUNTER")]
         /// <remarks/>
         public List<CHECKINCOUNTER> CHECKINCOUNTER
         {

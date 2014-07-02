@@ -74,6 +74,7 @@ namespace XMCares.BMS.FDI.Shell
             rmqService.OnRabbitMQConnected += new RabbitMQConnected(RMQService_OnRabbitMQConnected);
             rmqService.OnRabbitMQMessage += new RabbitMQMessage(RMQService_OnRabbitMQMessage);
             rmqService.Subscribe(ConfigHelper.SubQueue);
+            SetStatusStrip(tsslSource, true);
         }
 
         private void DisposeRabbitMQ()
@@ -105,7 +106,7 @@ namespace XMCares.BMS.FDI.Shell
             string TimeStamp = new DateTime(e.Messagepoperties.Timestamp).ToString("yyyy-MM-dd HH:mm:ss fff");
             string SystemTime = DateTime.Now.ToString();
             string MessageBody = Encoding.UTF8.GetString(e.Bytemessage);
-            AIISBASE o = XmlSerializeHelper.Deserialize<AIISBASE>(MessageBody);      
+            AIISBASE o = XmlSerializeHelper.Deserialize<AIISBASE>(MessageBody);
         }
 
         private void TestDBConn()

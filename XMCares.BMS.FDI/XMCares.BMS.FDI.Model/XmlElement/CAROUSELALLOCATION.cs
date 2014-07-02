@@ -17,6 +17,7 @@ namespace XMCares.BMS.FDI.Model
     {
         private List<CAROUSEL> cAROUSELField;
 
+        [System.Xml.Serialization.XmlElementAttribute("CAROUSEL")]
         /// <remarks/>
         public List<CAROUSEL> CAROUSEL
         {

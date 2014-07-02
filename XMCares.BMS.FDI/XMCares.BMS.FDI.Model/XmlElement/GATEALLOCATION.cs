@@ -17,6 +17,7 @@ namespace XMCares.BMS.FDI.Model
     {
         private List<GATE> gATEField;
 
+        [System.Xml.Serialization.XmlElementAttribute("GATE")]
         /// <remarks/>
         public List<GATE> GATE
         {
